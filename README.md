@@ -15,7 +15,6 @@ It includes both a user-facing frontend and an admin backoffice for managing roo
 - ✅ **Custom branding** with client-specific logos, colors, and UI updates
 - ✅ **WhatsApp integration** added to the booking management section (backoffice)
 - ✅ **Language configuration** for French (FR) to ensure localization
-- ✅ **Removal of pricing visibility** from the frontend (custom code editing)
 - ✅ **Error handling**: fixed the `ERR_TOO_MANY_REDIRECTS` issue by editing `.htaccess` and SSL settings
 - ✅ **Deactivation of conflicting modules** for improved stability
 
@@ -28,11 +27,44 @@ It includes both a user-facing frontend and an admin backoffice for managing roo
 - **cPanel / Hostinger**
 - **HTML / CSS**
 
+---
+
+## 👤 Client-Specific Customizations
+
+This site was built for a real-world client, and included the following tailored changes:
+
+| Custom Feature                | Description                                                |
+| ----------------------------- | ---------------------------------------------------------- |
+| WhatsApp Booking Notification | Added a contact button in the backoffice after bookings    |
+| Language Support              | Enabled and customized French translation for frontend     |
+| Price Removal                 | Removed visible prices on hotel listings via code edits    |
+| Redirect Error Fix            | Solved “too many redirects” issue via Hostinger SSL config |
+| Module Clean-up               | Disabled non-QloApps modules for improved stability        |
+
+---
+
+## 🧠 Lessons Learned
+
+Throughout this project, I gained practical experience in:
+
+- **Deploying CMS-based platforms** from local to production, including handling databases, hosting environments, and domain setups.
+- **Debugging real-world issues**, such as redirection loops and module conflicts, which taught me about server behavior and CMS internals.
+- **Customizing a production-ready e-commerce tool** to match the business needs of a client using code-level overrides.
+- **Communicating with a client** to understand and implement exact specifications (UI changes, features, restrictions).
+
+---
+
+## 🛠️ Technologies Used
+
+- **QloApps (based on PrestaShop)**
+- **PHP / Smarty Templates**
+- **MySQL** (local and production)
+- **Apache / SSL**
+- **cPanel / Hostinger**
+- **HTML / CSS**
+
+---
+
 ## 📂 Installation Instructions
 
 > ⚠️ This project requires a valid QloApps setup. Follow official [QloApps installation guide](https://qloapps.com/install-qloapps/) if you’re starting from scratch.
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/qloapps-hotel-project.git
-   ```
