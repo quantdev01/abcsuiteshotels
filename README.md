@@ -1,3 +1,5 @@
+# Visit the live project at: https://yourclientsite.com
+
 # 🏨 Hotel Booking Website – QloApps Customized Deployment
 
 This project is a **fully functional hotel reservation website** built using the **QloApps** CMS (based on PrestaShop).  
