@@ -27,7 +27,7 @@
 				<div class="row">
 					{block name='room_type_list_room_image'}
 						<div class="col-sm-4">
-								<a href="{$room_v['product_link']|escape:'htmlall':'UTF-8'}">
+							<a href="{$room_v['product_link']|escape:'htmlall':'UTF-8'}">
 								<img src="{$room_v['image']|escape:'htmlall':'UTF-8'}" class="img-responsive room-type-image">
 								{block name='displayRoomTypeListImageAfter'}
 									{hook h='displayRoomTypeListImageAfter' product=$room_v}
@@ -41,14 +41,17 @@
 								<div class="row">
 									<p class="rm_heading col-sm-12 col-md-7">{$room_v['name']|escape:'htmlall':'UTF-8'}</p>
 									{if !isset($restricted_country_mode) && !$PS_CATALOG_MODE && !$order_date_restrict}
-										<p class="rm_left col-sm-12 col-md-5" {if $room_v['room_left'] > $warning_num}  style="display:none"{/if}>
-											{l s='Hurry!'} <span class="remain_rm_qty">{$room_v['room_left']|escape:'htmlall':'UTF-8'}</span> {l s='rooms left'}
+										<p class="rm_left col-sm-12 col-md-5" {if $room_v['room_left'] > $warning_num} style="display:none"
+											{/if}>
+											{l s='Hurry!'} <span class="remain_rm_qty">{$room_v['room_left']|escape:'htmlall':'UTF-8'}</span>
+											{l s='rooms left'}
 										</p>
 									{/if}
 								</div>
 							{/block}
 							{block name='room_type_list_room_description'}
-								<div class="rm_desc">{$room_v['description_short']|truncate:190:"":true}&nbsp;<a class="view_more" href="{$room_v['product_link']|escape:'htmlall':'UTF-8'}">{l s='View More'}....</a></div>
+								<div class="rm_desc">{$room_v['description_short']|truncate:190:"":true}&nbsp;<a class="view_more"
+										href="{$room_v['product_link']|escape:'htmlall':'UTF-8'}">{l s='View More'}....</a></div>
 							{/block}
 							<div class="room_features_cont">
 								<div class="row">
@@ -57,7 +60,9 @@
 											{if !empty($room_v['feature'])}
 												<p class="rm_amenities_cont">
 													{foreach from=$room_v['feature'] key=feat_k item=feat_v}
-														<img title="{$feat_v.name|escape:'htmlall':'UTF-8'}" src="{$link->getMediaLink("`$feat_img_dir`{$feat_v.value}")|escape:'htmlall':'UTF-8'}" class="rm_amen">
+														<img title="{$feat_v.name|escape:'htmlall':'UTF-8'}"
+															src="{$link->getMediaLink("`$feat_img_dir`{$feat_v.value}" )|escape:'htmlall':'UTF-8'}"
+															class="rm_amen">
 													{/foreach}
 												</p>
 											{/if}
@@ -65,7 +70,11 @@
 									{/block}
 									{block name='room_type_list_room_max_guests_mobile'}
 										<div class="col-sm-12 hidden-md hidden-lg">
-											<p class="capa_txt"><span>{$room_v['max_guests']|escape:'htmlall':'UTF-8'} {l s='Max guests:'}</span><span class="capa_data"> {$room_v['max_adults']|escape:'htmlall':'UTF-8'} {l s='Adults'}, {$room_v['max_children']|escape:'htmlall':'UTF-8'} {if $room_v['children'] > 1}{l s='Children'}{else}{l s='Child'}{/if}</span></p>
+											<p class="capa_txt"><span>{$room_v['max_guests']|escape:'htmlall':'UTF-8'}
+													{l s='Max guests:'}</span><span class="capa_data">
+													{$room_v['max_adults']|escape:'htmlall':'UTF-8'} {l s='Adults'},
+													{$room_v['max_children']|escape:'htmlall':'UTF-8'}
+													{if $room_v['children'] > 1}{l s='Children'}{else}{l s='Child'}{/if}</span></p>
 										</div>
 									{/block}
 									{block name='room_type_list_room_price'}
@@ -92,7 +101,11 @@
 								<div class="row">
 									{block name='room_type_list_room_max_guests'}
 										<div class="col-sm-12 col-md-6 col-lg-4 visible-md visible-lg">
-											<div class="capa_txt"><span>{$room_v['max_guests']|escape:'htmlall':'UTF-8'} {l s='Max guests:'}</span><br><span class="capa_data"> {$room_v['max_adults']|escape:'htmlall':'UTF-8'} {l s='Adults'}, {$room_v['max_children']|escape:'htmlall':'UTF-8'} {if $room_v['children'] > 1}{l s='Children'}{else}{l s='Child'}{/if}</span></div>
+											<div class="capa_txt"><span>{$room_v['max_guests']|escape:'htmlall':'UTF-8'}
+													{l s='Max guests:'}</span><br><span class="capa_data">
+													{$room_v['max_adults']|escape:'htmlall':'UTF-8'} {l s='Adults'},
+													{$room_v['max_children']|escape:'htmlall':'UTF-8'}
+													{if $room_v['children'] > 1}{l s='Children'}{else}{l s='Child'}{/if}</span></div>
 										</div>
 									{/block}
 									<div class="col-sm-12 col-md-6 col-lg-8">
@@ -115,7 +128,12 @@
 													{/if}
 													{block name='room_type_list_room_book_now_button'}
 														<div>
-															<a cat_rm_check_in="{$booking_date_from|escape:'htmlall':'UTF-8'}" cat_rm_check_out="{$booking_date_to|escape:'htmlall':'UTF-8'}" href="" rm_product_id="{$room_v['id_product']}" cat_rm_book_nm_days="{$num_days|escape:'htmlall':'UTF-8'}" data-id-product-attribute="0" data-id-product="{$room_v['id_product']|intval}" class="btn btn-default button button-medium ajax_add_to_cart_button"><span>{l s='Book Now'}</span></a>
+															<a cat_rm_check_in="{$booking_date_from|escape:'htmlall':'UTF-8'}"
+																cat_rm_check_out="{$booking_date_to|escape:'htmlall':'UTF-8'}" href=""
+																rm_product_id="{$room_v['id_product']}"
+																cat_rm_book_nm_days="{$num_days|escape:'htmlall':'UTF-8'}"
+																data-id-product-attribute="0" data-id-product="{$room_v['id_product']|intval}"
+																class="btn btn-default button button-medium ajax_add_to_cart_button"><span>{l s='Réserver maintenant'}</span></a>
 														</div>
 													{/block}
 												{/if}

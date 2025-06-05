@@ -1,0 +1,42 @@
+{
+  "name": "pluglin/prestashop-pluglin-plugin",
+  "type": "prestashop-module",
+  "description": "High quality translations",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pluglin",
+      "email": "hola@pluglin.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~5.0",
+    "monolog/monolog": "^1.26"
+  },
+  "require-dev": {
+    "php": ">=7.1",
+    "symplify/easy-coding-standard": "^9.4"
+  },
+  "config": {
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.1"
+    },
+    "preferred-install": "dist",
+    "prepend-autoloader": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Pluglin\\Prestashop\\": "library/"
+    },
+    "classmap": [
+      "classes"
+    ],
+    "files": [
+      "helpers/helpers.php"
+    ],
+    "exclude-from-classmap": []
+  },
+  "author": "Pluglin <hola@pluglin.com>"
+}

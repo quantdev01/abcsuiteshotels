@@ -171,7 +171,7 @@
 										</div>
 									</div>
 								{/block}
-								{block name='shopping_cart_room_type_price_detail'}
+								{* {block name='shopping_cart_room_type_price_detail'}
 									<div class="row room_price_detail_block">
 										{block name='shopping_cart_room_type_and_service_price'}
 											<div class="col-sm-7 margin-btm-sm-10">
@@ -238,7 +238,7 @@
 											</div>
 										{/block}
 									</div>
-								{/block}
+								{/block} *}
 								{block name='displayCartProductContentAfter'}
 									{hook h='displayCartProductContentAfter' cart_detail=$data_v key=$rm_k}
 								{/block}
@@ -343,9 +343,24 @@
 						<div class="col-sm-12 proceed_btn_block">
 							<a class="btn btn-default button button-medium pull-right" href="{$link->getPageLink('order-opc', null, null, ['proceed_to_customer_dtl' => 1])}" title="Proceed to checkout" rel="nofollow">
 								<span>
-									{l s='Proceed'}
+									{l s='Proceed now'}
 								</span>
 							</a>
+							{*! adding the code form *}
+							<form action="{$link->getModuleLink('bankwire', 'validation', [], true)|escape:'html':'UTF-8'}" method="post">
+
+								<p class="cart_navigation clearfix" id="cart_navigation">
+									{*By webkul To Check Order restrict condition before Payment by the customer*}
+									{if !$restrict_order}
+
+										<button class="btn pull-right button button-medium" type="submit">
+											<span>{l s='Save' mod='bankwire'}</span>
+										</button>
+										
+									{/if}
+								</p>
+</form>
+							{*! last line *}
 						</div>
 					</div>
 				{/block}

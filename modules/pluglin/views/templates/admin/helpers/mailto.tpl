@@ -1,0 +1,1 @@
+<a href="mailto:hola@pluglin.com" target="_blank">hola@pluglin.com</a>

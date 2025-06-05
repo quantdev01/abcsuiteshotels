@@ -1,0 +1,648 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.imgWelcome {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+
+#content.bootstrap .pluglin_steps {
+    max-width: 737px;
+}
+
+#content.bootstrap .pluglin_steps,
+#content.bootstrap .center-column .panel {
+    border: 0;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px #e7e7e7;
+    border-radius: 4px;
+    padding: 28px;
+}
+
+#content.bootstrap .center-column .panel {
+    min-height: calc(100vh - 216px);
+}
+
+#content.bootstrap .center-column .panel .panel-heading {
+    margin: 40px 0 20px 0;
+    padding: 0;
+    height: auto;
+    text-transform: none;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+#content.bootstrap .center-column .panel > .panel-heading:first-child {
+    margin-top: 0;
+}
+
+.pluglin_panel,
+.pluglin_panel p,
+.pluglin_panel li,
+.pluglin_panel label,
+.pluglin_panel input,
+.pluglin_panel textarea,
+.pluglin_panel inputToken input,
+.pluglin_panel button[type="submit"],
+.pluglin_panel select[multiple],
+.pluglin_panel .btn-default {
+    font-family: Open Sans;
+    font-size: 14px;
+    color: #1F3349;
+    font-weight: 500;
+}
+
+.pluglin_panel p,
+.pluglin_panel label {
+    margin-bottom: 12px;
+}
+
+.pluglin_panel p:last-child:not(.pluglin_title) {
+    margin-bottom: 0;
+}
+
+.pluglin_panel li {
+    margin-bottom: 8px;
+}
+
+.pluglin_panel a {
+    color: #2B6EB5;
+}
+
+.pluglin_panel .pluglin_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+.pluglin_panel .pluglin_subtitle {
+    font-weight: 600;
+    margin-bottom: 7px;
+    margin-top: 30px;
+    text-transform: none;
+}
+
+.pluglin_panel .control_panel .pluglin_subtitle {
+    margin-top: 25px;
+}
+
+.pluglin_panel .inputToken input {
+    padding: 10px;
+    height: 44px;
+    width: 100%;
+    max-width: 504px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(31, 51, 73, .3);
+}
+
+.pluglin_panel .control_panel .inputToken input {
+    max-width: 404px;
+    background: #ffffff;
+    margin: 0;
+}
+
+.pluglin_panel .btn-container {
+    display: flex;
+    margin-top: 25px;
+}
+
+.pluglin_panel button[type="submit"].btn-default,
+.pluglin_panel #sync_now {
+    border-radius: 4px;
+    padding: 10px 15px;
+    border: 1px solid rgba(43, 110, 181, 0.3);
+    font-weight: 600;
+    width: auto;
+    color: #2B6EB5;
+    background: #F5F7FA;
+    transition: .3s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pluglin_panel button[type="submit"].btn-default {
+    padding: 12px 25px;
+}
+
+.pluglin_panel button[type="submit"].btn-default:hover,
+.pluglin_panel #sync_now:hover {
+    color: #ffffff;
+    background: #2B6EB5;
+}
+
+.pluglin_panel #sync_now .syncing_ico {
+    width: 15px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pluglin_panel #sync_now .syncing_ico svg {
+    fill: #2B6EB5;
+}
+
+.pluglin_panel button[type="submit"].btn-default:hover .syncing_ico svg,
+.pluglin_panel #sync_now:hover .syncing_ico svg {
+    fill: #ffffff;
+}
+
+.pluglin_panel .pluglin_submit {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto 0 auto;
+}
+
+.pluglin_panel .pluglin_submit button[type="submit"] {
+    height: 44px;
+    width: 100%;
+    max-width: 504px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid rgba(43, 110, 181, 0.3);
+    font-weight: 600;
+    color: #ffffff;
+    background: #2B6EB5;
+    transition: .3s all ease-in-out;
+}
+
+.pluglin_panel .pluglin_submit button[type="submit"]:disabled {
+    color: #2B6EB5;
+    background: #F5F7FA;
+    cursor: not-allowed;
+}
+
+.progress_bar {
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress_bar.progress_bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #91E34D;
+}
+
+.progress_bar.progress_bar_2:after {
+    width: 25%;
+}
+
+.progress_bar.progress_bar_3:after {
+    width: 50%;
+}
+
+.progress_bar.progress_bar_4:after {
+    width: 75%;
+}
+
+.pluglin_default_lang {
+    display: flex;
+    align-items: center;
+}
+
+.pluglin_default_lang img {
+    border-radius: 2px;
+    margin-right: 10px;
+    max-width: 20px;
+}
+
+#language_restriction_div {
+    max-width: 680px;
+}
+
+#language_restriction_div .table {
+    margin-bottom: 0;
+}
+
+#language_restriction_div .table tbody > tr > td {
+    width: 50%;
+    padding: 0;
+    border: 0;
+    background: none!important;
+}
+
+#language_restriction_div select[multiple] {
+    height: auto;
+    padding: 0;
+    min-height: 280px;
+    box-shadow: none!important;
+    border: 1px solid rgba(31, 51, 73, 0.3);
+    background: #ffffff;
+    border-radius: 0;
+    overflow: auto;
+}
+
+#language_restriction_div select[multiple] option {
+    padding: 5px;
+}
+
+#language_restriction_div .table tbody > tr > td:first-child select[multiple] {
+    border-radius: 4px 0px 0px 0px;
+}
+
+#language_restriction_div .table tbody > tr > td:not(:first-child) select[multiple] {
+    border-radius: 0px 4px 0px 0px;
+    border-left: 0;
+}
+
+#language_restriction_div .table tbody .btn-default {
+    font-size: 14px;
+    line-height: 16px;
+    color: #1F3349;
+    font-weight: 500;
+    height: 44px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(31, 51, 73, 0.3);
+    border-top: 0;
+    transition: .3s all ease-in-out;
+}
+
+#language_restriction_div .table tbody > tr > td:first-child .btn-default {
+    border-radius: 0px 0px 0px 4px;
+}
+
+#language_restriction_div .table tbody > tr > td:not(:first-child) .btn-default {
+    border-radius: 0px 0px 4px 0px;
+    border-left: 0;
+}
+
+#language_restriction_div .table tbody .btn-default i {
+    padding: 0 5px;
+    transition: .3s all ease-in-out;
+}
+
+#language_restriction_div .table tbody .btn-default:hover {
+    color: #ffffff;
+    background: #2B6EB5;
+}
+
+.pluglin_panel .content_type_container {
+    margin-top: 32px;
+}
+
+.pluglin_panel .content_type {
+    display: flex;
+    align-items: center;
+    margin: 0 0 8px 0!important;
+}
+
+.pluglin_panel .content_type .col-md-6 {
+    padding: 0;
+}
+
+.pluglin_panel .content_type .name_type {
+    padding-left: 46px;
+}
+
+.pluglin_panel .content_type.loading .name_type {
+    font-weight: bold;
+}
+
+.pluglin_panel .content_type .bar_progress_type,
+.pluglin_panel .content_type .count_type,
+.pluglin_panel .content_type .last_type {
+    display: none;
+}
+
+.pluglin_panel .content_type.loading .bar_progress_type {
+    display: block;
+}
+
+.pluglin_panel .content_type.completed .count_type {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pluglin_panel .content_type .bar_progress_type {
+    width: 100%;
+    height: 5px;
+    background: #D5E2F0;
+    border-radius: 2px;
+    position: relative;
+}
+
+.pluglin_panel .content_type .bar_progress_type .bar_completed_type {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 2px;
+    background: #91E34D;
+}
+
+.pluglin_panel .content_type .icon_type {
+    position: relative;
+}
+
+.pluglin_panel .content_type .icon_type .ico_completed {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 21px;
+    height: 16px;
+}
+
+.pluglin_panel .content_type .icon_type .ico_completed svg {
+    fill: #91E34D;
+}
+
+.pluglin_panel .content_type .icon_type .ico_loading {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 15px;
+    height: 16px;
+}
+
+.pluglin_panel .content_type .icon_type .ico_loading svg {
+    fill: #1F3349;
+}
+
+
+.pluglin_panel .content_type .icon_type .ico_completed,
+.pluglin_panel .content_type .icon_type .ico_loading {
+    display: none;
+}
+
+.pluglin_panel .content_type.completed .icon_type .ico_completed,
+.pluglin_panel .content_type.loading .icon_type .ico_loading {
+    display: block;
+}
+
+.pluglin_panel #sync_now.syncing {
+    pointer-events: none;
+}
+
+.pluglin_panel #sync_now.syncing .syncing_ico,
+.pluglin_panel .content_type .icon_type .ico_loading {
+    animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.pluglin_panel .pluglin_languages_selecteds {
+    margin-top: 32px;
+}
+
+.pluglin_panel .pluglin_languages_selecteds td {
+    padding: 7px;
+}
+
+.pluglin_panel td.name_language div,
+.pluglin_panel td.progress_language div {
+    display: flex;
+    align-items: center;
+}
+
+.pluglin_panel td.name_language img {
+    border-radius: 2px;
+    margin-right: 10px;
+    max-width: 20px;
+}
+
+.pluglin_panel td.check_language img {
+    outline: 1px solid #1F3349;
+}
+
+.pluglin_panel td.progress_language .progress_translated {
+    padding-right: 8px;
+}
+
+.pluglin_panel td.progress_language .progress_translated,
+.pluglin_panel td.progress_language .progress_revised {
+    position: relative;
+    padding-left: 15px;
+}
+
+.pluglin_panel td.progress_language .progress_translated:before,
+.pluglin_panel td.progress_language .progress_revised:before {
+    content: "";
+    width: 8px;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+}
+
+.pluglin_panel td.progress_language .progress_translated:before {
+    background: #91E34D;
+}
+
+.pluglin_panel td.progress_language .progress_revised:before {
+    background: #A583FF;
+}
+
+.pluglin_panel .pluglin_language_totals {
+    font-size: 16px;
+}
+
+.pluglin_panel .pluglin_language_totals td {
+    padding-top: 15px;
+}
+
+#content .left-column {
+    width: 160px;
+}
+
+#content .center-column {
+    width: calc(100% - 160px);
+}
+
+.pluglin_panel .headerConfig {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.pluglin_panel .menu_option {
+    display: flex;
+}
+
+.pluglin_panel .menu_option a {
+    font-family: Open Sans;
+    margin-bottom: 10px;
+    padding: 3px 0;
+    color: #1F3349;
+    display: flex;
+    text-decoration: none!important;
+    border-bottom: 2px solid transparent;
+}
+
+.pluglin_panel .menu_option.selected a {
+    font-weight: 600;
+    color: #1F3349;
+    border-bottom: 2px solid #2B6EB5;
+}
+
+.pluglin_panel .menu_option a:hover {
+    color: #1F3349;
+    border-bottom: 2px solid #2B6EB5;
+}
+
+.pluglin_panel .sync_now_container {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.control_panel table {
+    width: 100%;
+}
+
+.control_panel table thead {
+    border: 1px solid #E7E7E7;
+}
+
+.control_panel table th {
+    padding: 10px 15px;
+}
+
+.control_panel table td {
+    padding: 7px 15px;
+}
+
+.status_pluglin {
+    position: absolute;
+    top: 34px;
+    right: 28px;
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
+.status_pluglin.connected {
+     color: #609335;
+}
+
+.status_pluglin.disconnected {
+    color: #E50031;
+}
+
+.status_pluglin:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 0;
+    border-radius: 50%;
+}
+
+.status_pluglin.connected:after {
+    background: #609335;
+}
+
+.status_pluglin.disconnected:after {
+    background: #E50031;
+}
+
+.control_panel .configure_languages_howmany {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.control_panel .frequency_sync {
+    width: 85px;
+    height: 44px;
+    margin: 0 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 51, 73, .3);
+}
+
+.automatic_sync input[type=checkbox] {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.automatic_sync input[type=checkbox]+span {
+    margin-right: 7px;
+    margin-top: -2px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #1F3349;
+}
+
+.automatic_sync input[type=checkbox]+span .checkbox-checked {
+    display: none;
+    margin: -2px 0px;
+}
+
+.automatic_sync input[type=checkbox]:checked+span .checkbox-checked {
+    display: block;
+}
+
+.support_pluglin textarea {
+    min-height: 184px;
+    background: #ffffff;
+}
+
+.pluglin_panel .pluglin_alert {
+    padding: 15px 25px;
+    background: #FFE9EE;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.pluglin_panel .pluglin_alert_ico {
+    width: 23px;
+}
+
+.pluglin_panel .pluglin_alert_ico svg {
+    fill: #E50031;
+    margin-top: 2px;
+}
+
+.pluglin_panel .pluglin_alert_text {
+    width: calc(100% - 23px);
+}
+
+.pluglin_panel .pluglin_alert p,
+.pluglin_panel .pluglin_alert a {
+    font-family: Open Sans;
+    color: #1F3349;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.pluglin_panel .pluglin_alert_text {
+    padding-left: 20px;
+}
+
+.pluglin_panel .pluglin_alert .pluglin_alert_title {
+    font-size: 16px;
+    font-weight: 600;
+}
