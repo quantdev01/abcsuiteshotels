@@ -64,7 +64,3 @@ Throughout this project, I gained practical experience in:
 - **HTML / CSS**
 
 ---
-
-## 📂 Installation Instructions
-
-> ⚠️ This project requires a valid QloApps setup. Follow official [QloApps installation guide](https://qloapps.com/install-qloapps/) if you’re starting from scratch.
